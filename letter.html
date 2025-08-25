@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Letter 💌</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background:#f6fff6;  /* light green background */
+  margin:0;
+  padding:20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+}
+.container {
+  max-width:700px;
+  background:#fff;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 8px 24px rgba(0,0,0,0.15);
+  display:none; /* initially hidden */
+}
+h1 {
+  text-align:center;
+  color:#2e8b57;
+}
+pre {
+  white-space:pre-wrap;
+  word-wrap:break-word;
+  font-size:16px;
+  line-height:1.6;
+  color:#222;
+}
+.attachments {
+  margin-top:20px;
+}
+.attachments h2 {
+  font-size:18px;
+  margin-bottom:10px;
+  color:#2e8b57;
+}
+.attachments a {
+  display:block;
+  margin-bottom:8px;
+  color:#006400;
+  text-decoration:none;
+}
+.attachments a:hover {
+  text-decoration:underline;
+}
+button {
+  background:#2e8b57;
+  color:#fff;
+  border:none;
+  padding:16px 28px;
+  font-size:18px;
+  border-radius:8px;
+  cursor:pointer;
+  box-shadow:0 6px 16px rgba(46,139,87,0.3);
+  transition:0.2s;
+}
+button:hover {
+  background:#3cb371;
+}
+#unlock {
+  display:block;
+}
+</style>
+</head>
+<body>
+  <div id="unlock">
+    <button onclick="showLetter()">💌 Open the Letter</button>
+  </div>
+
+  <div class="container" id="letterBox">
+    <h1>Letter to Lachlan 💌</h1>
+    <pre>Dear Lachlan,
+
+First of all, I want to say that this letter is not a goodbye. I never thought of it as a real farewell. I’m sure we will see each other again.
+
+I’m really happy that I met you. It feels like I’ve had a wonderful dream. During the time we spent together, I found you to be such an interesting person—never making things awkward, always keeping our conversations going. Please forgive my poor English, as sometimes I couldn’t give you the active responses I wanted, but I truly enjoy listening to your stories. And honestly, you look very charming when you are working!
+
+You said you work very hard, you’re sensible, and sometimes needy, jealous. I’m glad you shared these sides of yourself with me, but I also see how much effort you put into getting better. I hope that when you’re with me, you don’t feel pressure—I hope what I bring you is happiness.
+
+You always compliment me so openly and it makes me happy. But I rarely compliment you, which makes me feel a little ashamed. Maybe in our time together, you’ve given more than me, and I’m really grateful for that. I can feel your passion and sincerity, and I think that is what matters most.
+
+You said meeting someone like me is a rarity. But I think it’s because you are good enough that the people you meet are also good hahaha. And most importantly, you are already excellent yourself!
+
+I truly wish you all the best, because you deserve it!
+
+— Hongyan Wang</pre>
+    <div class="attachments">
+      <h2>📎 Attachments</h2>
+      <a href="handwritten1.jpg" download>Handwritten Letter - Page 1</a>
+      <a href="handwritten2.jpg" download>Handwritten Letter - Page 2</a>
+    </div>
+  </div>
+
+<script>
+function showLetter() {
+  document.getElementById('unlock').style.display = 'none';
+  document.getElementById('letterBox').style.display = 'block';
+}
+</script>
+</body>
+</html>
